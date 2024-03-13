@@ -1,0 +1,5 @@
+require 'configs.options'
+require 'configs.mappings'
+require 'configs.autocmd'
+require 'configs.lazy_installer'
+require 'plugin_manager'
