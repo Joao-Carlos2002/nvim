@@ -6,7 +6,11 @@ local servers = {
   'rust_analyzer',
   'pyright',
   'tsserver',
-
+  'html',
+  'lua_ls',
+  'tailwindcss',
+  'cssls',
+  'eslint',
 }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

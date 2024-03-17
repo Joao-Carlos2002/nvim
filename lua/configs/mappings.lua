@@ -5,9 +5,12 @@ map('n', 'ss', '<cmd>split<cr>')
 map('n', 'sx', '<cmd>vsplit<cr>')
 map('n', '<C-s>', '<cmd>w!<cr>')
 map('i', '<C-s>', '<cmd>w!<cr>')
+map('n', '<C-r>', '<cmd>!go run main.go<cr>')
+map('n', '<C-g>', '<cmd>!go mod tidy<cr>')
 
--- NERDTree
-map('n', '<C-e>', ':NERDTreeToggle<cr>')
+-- NeoTree
+map('n', '<C-e>', ':Neotree toggle<cr>')
+map('n', '<C-a>', ':Neotree float git_status<cr>')
 
 -- Telescope
 map('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
