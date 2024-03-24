@@ -27,6 +27,7 @@ local plugins = {
     config = true,
   },
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+  {'akinsho/git-conflict.nvim', version = "*", config = true},
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
