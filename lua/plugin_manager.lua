@@ -1,15 +1,15 @@
 local lazy = require("lazy")
 local plugins = {
-{
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
-      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
-},
+  },
   { "ryanoasis/vim-devicons" },
   "folke/which-key.nvim",
   { "folke/neoconf.nvim", cmd = "Neoconf" },
@@ -26,6 +26,7 @@ local plugins = {
     event = "InsertEnter",
     config = true,
   },
+  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -197,3 +198,6 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+vim.opt.termguicolors = true
+require("bufferline").setup{}

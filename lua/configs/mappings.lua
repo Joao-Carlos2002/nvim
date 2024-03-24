@@ -18,6 +18,13 @@ map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
 map('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 
+-- ToogleTerm
+map('n', '<leader>t', '<cmd>ToggleTerm direction=float<cr>')
+
+-- BufferLine
+map('n', 'rr', '<cmd>BufferLineMovePrev<cr>')
+map('n', 'tt', '<cmd>BufferLineMoveNext<cr>')
+
 -- Shortcuts for split navigation
 map('n', '<C-h>', '<C-w>h')
 map('n', '<C-j>', '<C-w>j')
